@@ -1,0 +1,14 @@
+
+    <div ng-controller="myController">
+     <input type="text" name="" id="" ng-model="colorFont">
+        <h1 style="color:{{colorFont}}">{{title}}</h1>
+    
+    <table class="table">
+        <tr ng-repeat="d in data | filter:colorFont">
+            <td>{{d.animal}}</td>
+            <td>{{d.age}}</td>
+            <td>{{d.gender}}</td>
+            <td><a href="#" class="btn btn-primary">Adopt</a></td>
+        </tr>
+    </table>
+    

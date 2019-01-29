@@ -1,0 +1,32 @@
+#navigation img{
+  width: 10%;
+}
+
+#center img{
+  width:100%;
+}
+
+#navigation{
+  background-color:darkcyan; 
+}
+#slogan h1{
+
+  font-family: 'Baloo Thambi', cursive;
+
+}
+#navigation li a{
+  background-color:white;
+  color: black;
+  font-size:2rem;
+  border:3px solid black;
+  margin-right:2em;
+  
+}
+
+ 
+
+
+
+
+
+
