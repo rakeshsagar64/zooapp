@@ -51,6 +51,16 @@ app.post("/addAnimal",bp,function(req,res){
     })
 })
 
+app.post("/fetchById",bp,function(req,res){
+    console.log("fetch by id called");
+    console.log(req.body.animalId);
+    animalModel.find({"_id":req.body.animalId},function(err,data){
+        res.json(data);
+    });   
+});
+
+
+
 app.get("/employee",function(req,res){
     res.writeHead(200,{'Content-Type':'application/json'})
         let myReadStream=fs.createReadStream(__dirname+"/data/employee.json","utf-8");
